@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html, body {
+  font-family: "Kanit", serif;
+}
+
+.video-player.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+}
+
+.video-player .controls.fullscreen-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Custom Volume Bar */
+.custom-volume-bar input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: white;
+  color: white;
+  width: 60px;
+  outline: none;
+  border: none;
+}
+
+.custom-volume-bar input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: white;
+  color: white;
+}

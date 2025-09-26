@@ -1,0 +1,357 @@
+{
+  "678badbfee4a3e6f181443b8": [
+    {
+      "question": "World Wide Web ถูกคิดค้นโดยใคร?",
+      "answer": "Tim Berners-Lee"
+    },
+    { "question": "HTML ย่อมาจากอะไร?", "answer": "HyperText Markup Language" },
+    {
+      "question": "HTTP ย่อมาจากอะไร?",
+      "answer": "HyperText Transfer Protocol"
+    },
+    {
+      "question": "DNS มีหน้าที่อะไร?",
+      "answer": "แปลงชื่อโดเมนเป็น IP Address"
+    },
+    { "question": "โปรโตคอลใดใช้สำหรับส่งอีเมล?", "answer": "SMTP" },
+    { "question": "Web Browser มีหน้าที่อะไร?", "answer": "แสดงผลเว็บเพจ" },
+    {
+      "question": "เครื่องมือใดใช้ในการพัฒนาเว็บไซต์?",
+      "answer": "Visual Studio Code"
+    },
+    {
+      "question": "โดเมน .org มักใช้กับอะไร?",
+      "answer": "องค์กรไม่แสวงหากำไร"
+    },
+    {
+      "question": "เว็บเซิร์ฟเวอร์ทำหน้าที่อะไร?",
+      "answer": "ให้บริการเว็บเพจแก่ผู้ใช้"
+    },
+    {
+      "question": "HTTPS ปลอดภัยกว่า HTTP อย่างไร?",
+      "answer": "มีการเข้ารหัสข้อมูล"
+    }
+  ],
+  "678bae50ee4a3e6f181443be": [
+    {
+      "question": "โปรแกรมที่ใช้พัฒนาเว็บไซต์ยอดนิยมคืออะไร?",
+      "answer": "Visual Studio Code"
+    },
+    {
+      "question": "XAMPP ใช้ทำอะไร?",
+      "answer": "จำลองเซิร์ฟเวอร์สำหรับการพัฒนาเว็บ"
+    },
+    { "question": "Git ใช้สำหรับอะไร?", "answer": "จัดการเวอร์ชันของโค้ด" },
+    { "question": "NPM ใช้กับภาษาอะไร?", "answer": "JavaScript" },
+    {
+      "question": "เครื่องมือใดใช้ในการจัดการแพ็กเกจสำหรับ Node.js?",
+      "answer": "NPM"
+    },
+    {
+      "question": "Git command ใดใช้เพื่อคัดลอก repository?",
+      "answer": "git clone"
+    },
+    {
+      "question": "คำสั่งใดใช้เพื่ออัปเดตแพ็กเกจด้วย NPM?",
+      "answer": "npm update"
+    },
+    {
+      "question": "Docker ใช้เพื่ออะไร?",
+      "answer": "จำลองสภาพแวดล้อมของเซิร์ฟเวอร์"
+    },
+    {
+      "question": "เทคโนโลยีใดใช้ในการจัดเก็บโค้ดบนคลาวด์?",
+      "answer": "GitHub"
+    },
+    {
+      "question": "Node.js คืออะไร?",
+      "answer": "JavaScript runtime สำหรับเซิร์ฟเวอร์"
+    }
+  ],
+  "678bb59dee4a3e6f181444c3": [
+    { "question": "แท็ก <h1> ใช้สำหรับอะไร?", "answer": "หัวข้อใหญ่ที่สุด" },
+    { "question": "แท็ก <p> ใช้สำหรับอะไร?", "answer": "ย่อหน้า" },
+    { "question": "แท็ก <a> ใช้สำหรับอะไร?", "answer": "ลิงก์" },
+    { "question": "แท็ก <img> ใช้สำหรับอะไร?", "answer": "แสดงรูปภาพ" },
+    {
+      "question": "แท็ก <ul> ใช้สำหรับอะไร?",
+      "answer": "รายการแบบไม่เรียงลำดับ"
+    },
+    { "question": "แท็ก <table> ใช้สำหรับอะไร?", "answer": "ตารางข้อมูล" },
+    { "question": "แท็ก <input> ใช้สำหรับอะไร?", "answer": "ช่องกรอกข้อมูล" },
+    { "question": "แท็ก <form> ใช้สำหรับอะไร?", "answer": "ฟอร์มส่งข้อมูล" },
+    { "question": "แท็ก <div> ใช้สำหรับอะไร?", "answer": "กล่องแบ่งส่วน" },
+    {
+      "question": "HTML5 มีคุณสมบัติใหม่อะไรบ้าง?",
+      "answer": "รองรับเสียง, วิดีโอ, และ Canvas"
+    }
+  ],
+  "678bb642ee4a3e6f18144549": [
+    { "question": "CSS ย่อมาจากอะไร?", "answer": "Cascading Style Sheets" },
+    {
+      "question": "คำสั่ง CSS ใดใช้เปลี่ยนสีพื้นหลัง?",
+      "answer": "background-color"
+    },
+    { "question": "CSS Grid ใช้ทำอะไร?", "answer": "จัดการเลย์เอาต์แบบกริด" },
+    {
+      "question": "Flexbox ใช้ทำอะไร?",
+      "answer": "จัดการการจัดวางองค์ประกอบแบบยืดหยุ่น"
+    },
+    { "question": "คำสั่ง CSS ใดใช้กำหนดขนาดฟอนต์?", "answer": "font-size" },
+    { "question": "คำสั่ง CSS ใดใช้เปลี่ยนสีตัวอักษร?", "answer": "color" },
+    { "question": "คำสั่ง CSS ใดใช้กำหนดเส้นขอบ?", "answer": "border" },
+    {
+      "question": "Media Query ใช้ทำอะไร?",
+      "answer": "กำหนดสไตล์สำหรับอุปกรณ์ต่างๆ"
+    },
+    {
+      "question": "Pseudo-class ใช้ทำอะไร?",
+      "answer": "กำหนดสไตล์พิเศษให้กับองค์ประกอบ"
+    },
+    { "question": "CSS Framework ยอดนิยมคืออะไร?", "answer": "Bootstrap" }
+  ],
+
+  "67a2e27481f331ddfde41925": [
+    {
+      "question": "JavaScript ใช้ทำอะไร?",
+      "answer": "สร้างความโต้ตอบให้กับเว็บไซต์"
+    },
+    {
+      "question": "JavaScript สามารถทำงานได้ที่ไหน?",
+      "answer": "ทั้งฝั่งไคลเอ็นต์และเซิร์ฟเวอร์"
+    },
+    { "question": "JavaScript ถูกสร้างโดยใคร?", "answer": "Brendan Eich" },
+    {
+      "question": "JavaScript เป็นภาษาแบบใด?",
+      "answer": "ภาษาโปรแกรมเชิงสคริปต์"
+    },
+    {
+      "question": "JavaScript สามารถทำงานร่วมกับภาษาอะไรได้บ้าง?",
+      "answer": "HTML และ CSS"
+    },
+    {
+      "question": "JavaScript มีความสามารถอะไรที่สำคัญ?",
+      "answer": "จัดการ DOM และ Event Handling"
+    },
+    {
+      "question": "JavaScript สามารถใช้สร้างอะไรได้บ้าง?",
+      "answer": "แอปพลิเคชันเว็บ, เกม, และแอปพลิเคชันมือถือ"
+    },
+    {
+      "question": "JavaScript รันบนเบราว์เซอร์ได้อย่างไร?",
+      "answer": "ผ่าน JavaScript Engine"
+    },
+    {
+      "question": "JavaScript มีเฟรมเวิร์กยอดนิยมอะไรบ้าง?",
+      "answer": "React, Angular, Vue.js"
+    },
+    {
+      "question": "JavaScript สามารถใช้กับฐานข้อมูลได้หรือไม่?",
+      "answer": "ได้ ผ่านเทคโนโลยีเช่น Node.js และ MongoDB"
+    }
+  ],
+  "67a2e61881f331ddfde41995": [
+    {
+      "question": "ตัวแปรใน JavaScript ประกาศด้วยคำสั่งใด?",
+      "answer": "var, let, const"
+    },
+    {
+      "question": "ประเภทข้อมูลพื้นฐานใน JavaScript มีอะไรบ้าง?",
+      "answer": "String, Number, Boolean, Null, Undefined, Object"
+    },
+    {
+      "question": "let แตกต่างจาก var อย่างไร?",
+      "answer": "let มีขอบเขตบล็อก (block scope)"
+    },
+    { "question": "const ใช้ประกาศอะไร?", "answer": "ค่าคงที่" },
+    {
+      "question": "ประเภทข้อมูล Object ใช้เก็บอะไร?",
+      "answer": "คู่ key-value"
+    },
+    {
+      "question": "Array ใน JavaScript คืออะไร?",
+      "answer": "โครงสร้างข้อมูลแบบลำดับ"
+    },
+    { "question": "typeof ใช้ทำอะไร?", "answer": "ตรวจสอบประเภทข้อมูล" },
+    { "question": "NaN หมายถึงอะไร?", "answer": "Not a Number" },
+    {
+      "question": "undefined หมายถึงอะไร?",
+      "answer": "ตัวแปรที่ยังไม่ได้กำหนดค่า"
+    },
+    { "question": "null หมายถึงอะไร?", "answer": "ค่าที่ว่างเปล่า" }
+  ],
+  "67a4c554486d20cd112e40e3": [
+    {
+      "question": "ฟังก์ชันใน JavaScript ประกาศด้วยคำสั่งใด?",
+      "answer": "function"
+    },
+    { "question": "Arrow Function คืออะไร?", "answer": "ฟังก์ชันแบบย่อ" },
+    {
+      "question": "คำสั่ง return ใช้ทำอะไร?",
+      "answer": "ส่งค่ากลับจากฟังก์ชัน"
+    },
+    {
+      "question": "Callback Function คืออะไร?",
+      "answer": "ฟังก์ชันที่ส่งเป็นอาร์กิวเมนต์"
+    },
+    {
+      "question": "Promise ใช้ทำอะไร?",
+      "answer": "จัดการการทำงานแบบ asynchronous"
+    },
+    {
+      "question": "async/await ใช้ทำอะไร?",
+      "answer": "ทำให้โค้ด asynchronous อ่านง่ายขึ้น"
+    },
+    { "question": "คำสั่ง if ใช้ทำอะไร?", "answer": "ตรวจสอบเงื่อนไข" },
+    { "question": "คำสั่ง switch ใช้ทำอะไร?", "answer": "ตรวจสอบหลายเงื่อนไข" },
+    { "question": "คำสั่ง for ใช้ทำอะไร?", "answer": "วนลูป" },
+    { "question": "คำสั่ง break ใช้ทำอะไร?", "answer": "หยุดการทำงานของลูป" }
+  ],
+  "67bb410da1eed4807d9c54b5": [
+    {
+      "question": "วิธีรับข้อมูลจากผู้ใช้ใน JavaScript?",
+      "answer": "ใช้ prompt หรือฟอร์ม HTML"
+    },
+    {
+      "question": "Event Listener ใช้ทำอะไร?",
+      "answer": "ตรวจจับเหตุการณ์จากผู้ใช้"
+    },
+    {
+      "question": "Form Validation คืออะไร?",
+      "answer": "ตรวจสอบความถูกต้องของข้อมูล"
+    },
+    {
+      "question": "วิธีป้องกันการส่งฟอร์มด้วย JavaScript?",
+      "answer": "ใช้ preventDefault()"
+    },
+    {
+      "question": "วิธีดึงค่าจาก input field?",
+      "answer": "ใช้ document.getElementById()"
+    },
+    {
+      "question": "วิธีตรวจสอบค่าว่างใน JavaScript?",
+      "answer": "ใช้เงื่อนไข if (value === '')"
+    },
+    {
+      "question": "วิธีแสดงข้อความผิดพลาดให้ผู้ใช้?",
+      "answer": "ใช้ alert หรือ DOM manipulation"
+    },
+    {
+      "question": "วิธีตรวจสอบอีเมลใน JavaScript?",
+      "answer": "ใช้ Regular Expression"
+    },
+    {
+      "question": "วิธีเก็บข้อมูลผู้ใช้ในเบราว์เซอร์?",
+      "answer": "ใช้ localStorage หรือ sessionStorage"
+    },
+    { "question": "วิธีล้างข้อมูลในฟอร์ม?", "answer": "ใช้ reset()" }
+  ],
+  "67bb4186a1eed4807d9c54e9": [
+    {
+      "question": "Event Handling คืออะไร?",
+      "answer": "การจัดการเหตุการณ์จากผู้ใช้"
+    },
+    {
+      "question": "วิธีเพิ่ม Event Listener?",
+      "answer": "ใช้ addEventListener()"
+    },
+    {
+      "question": "Event Bubbling คืออะไร?",
+      "answer": "เหตุการณ์แพร่จากองค์ประกอบลูกไปยังพ่อ"
+    },
+    {
+      "question": "Event Capturing คืออะไร?",
+      "answer": "เหตุการณ์แพร่จากองค์ประกอบพ่อไปยังลูก"
+    },
+    {
+      "question": "วิธีหยุด Event Bubbling?",
+      "answer": "ใช้ stopPropagation()"
+    },
+    {
+      "question": "Event Object คืออะไร?",
+      "answer": "อ็อบเจกต์ที่เก็บข้อมูลเหตุการณ์"
+    },
+    { "question": "วิธีตรวจสอบปุ่มที่คลิก?", "answer": "ใช้ event.button" },
+    { "question": "วิธีตรวจสอบคีย์ที่กด?", "answer": "ใช้ event.key" },
+    {
+      "question": "Mouse Event มีอะไรบ้าง?",
+      "answer": "click, mouseover, mouseout"
+    },
+    {
+      "question": "Keyboard Event มีอะไรบ้าง?",
+      "answer": "keydown, keyup, keypress"
+    }
+  ],
+  "67bb42b9a1eed4807d9c561b": [
+    { "question": "DOM คืออะไร?", "answer": "โครงสร้างต้นไม้ของ HTML" },
+    {
+      "question": "วิธีเลือกองค์ประกอบด้วย ID?",
+      "answer": "ใช้ document.getElementById()"
+    },
+    {
+      "question": "วิธีเลือกองค์ประกอบด้วย Class?",
+      "answer": "ใช้ document.getElementsByClassName()"
+    },
+    {
+      "question": "วิธีเลือกองค์ประกอบด้วย Tag?",
+      "answer": "ใช้ document.getElementsByTagName()"
+    },
+    {
+      "question": "วิธีสร้างองค์ประกอบใหม่?",
+      "answer": "ใช้ document.createElement()"
+    },
+    {
+      "question": "วิธีเพิ่มองค์ประกอบเข้าไปใน DOM?",
+      "answer": "ใช้ appendChild()"
+    },
+    { "question": "วิธีลบองค์ประกอบจาก DOM?", "answer": "ใช้ removeChild()" },
+    {
+      "question": "วิธีเปลี่ยนเนื้อหาขององค์ประกอบ?",
+      "answer": "ใช้ innerHTML หรือ textContent"
+    },
+    {
+      "question": "วิธีเปลี่ยนสไตล์ขององค์ประกอบ?",
+      "answer": "ใช้ style.property"
+    },
+    {
+      "question": "วิธีเพิ่มคลาสให้องค์ประกอบ?",
+      "answer": "ใช้ classList.add()"
+    }
+  ],
+  "67bb431aa1eed4807d9c5651": [
+    {
+      "question": "วิธีสร้างเว็บไซต์โต้ตอบด้วย JavaScript?",
+      "answer": "ใช้ Event Handling และ DOM Manipulation"
+    },
+    {
+      "question": "AJAX ใช้ทำอะไร?",
+      "answer": "ส่งคำขอ HTTP แบบ asynchronous"
+    },
+    { "question": "วิธีใช้ Fetch API?", "answer": "ใช้ fetch()" },
+    {
+      "question": "วิธีจัดการข้อมูล JSON?",
+      "answer": "ใช้ JSON.parse() และ JSON.stringify()"
+    },
+    {
+      "question": "วิธีสร้างแอนิเมชันด้วย JavaScript?",
+      "answer": "ใช้ requestAnimationFrame()"
+    },
+    {
+      "question": "วิธีสร้าง Modal ด้วย JavaScript?",
+      "answer": "ใช้ DOM Manipulation และ CSS"
+    },
+    {
+      "question": "วิธีสร้าง Dropdown Menu?",
+      "answer": "ใช้ Event Handling และ CSS"
+    },
+    {
+      "question": "วิธีสร้าง Form Validation?",
+      "answer": "ใช้ Regular Expression และ Event Handling"
+    },
+    { "question": "วิธีสร้าง Carousel?", "answer": "ใช้ JavaScript และ CSS" },
+    {
+      "question": "วิธีสร้าง Infinite Scroll?",
+      "answer": "ใช้ AJAX และ DOM Manipulation"
+    }
+  ]
+}
