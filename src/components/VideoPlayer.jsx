@@ -13,6 +13,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
 const VideoPlayer = ({ src, onPlay, onEnded }) => {
+  const API_URL = import.meta.env.VITE_API_URL;
   const { setUser } = useAuth();
   const { id } = useParams();
   const navigate = useNavigate();
@@ -38,15 +39,15 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     // Initial check
     checkMobile();
-    
+
     // Add resize listener
-    window.addEventListener('resize', checkMobile);
-    
+    window.addEventListener("resize", checkMobile);
+
     // Cleanup
-    return () => window.removeEventListener('resize', checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const formatTime = (time) => {
@@ -138,7 +139,8 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
     const progressBar = progressRef.current;
     if (progressBar && e.touches && e.touches[0]) {
       const rect = progressBar.getBoundingClientRect();
-      const touchPosition = (e.touches[0].clientX - rect.left) / progressBar.offsetWidth;
+      const touchPosition =
+        (e.touches[0].clientX - rect.left) / progressBar.offsetWidth;
       const newTime = touchPosition * videoRef.current.duration;
 
       setProgress(touchPosition * 100);
@@ -154,7 +156,7 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
     progressBar.addEventListener("mousemove", handleMouseMoveProgress);
     progressBar.addEventListener("mouseup", handleMouseUpProgress);
     progressBar.addEventListener("mouseleave", handleMouseUpProgress);
-    
+
     // Touch events
     progressBar.addEventListener("touchstart", handleTouchStartProgress);
     progressBar.addEventListener("touchmove", handleTouchMoveProgress);
@@ -165,7 +167,7 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
       progressBar.removeEventListener("mousemove", handleMouseMoveProgress);
       progressBar.removeEventListener("mouseup", handleMouseUpProgress);
       progressBar.removeEventListener("mouseleave", handleMouseUpProgress);
-      
+
       // Remove touch events
       progressBar.removeEventListener("touchstart", handleTouchStartProgress);
       progressBar.removeEventListener("touchmove", handleTouchMoveProgress);
@@ -194,26 +196,30 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
     if (!isFullscreen) {
       if (player.requestFullscreen) {
         player.requestFullscreen();
-      } else if (player.webkitRequestFullscreen) { // Safari
+      } else if (player.webkitRequestFullscreen) {
+        // Safari
         player.webkitRequestFullscreen();
-      } else if (player.msRequestFullscreen) { // IE11
+      } else if (player.msRequestFullscreen) {
+        // IE11
         player.msRequestFullscreen();
       }
     } else {
       if (document.exitFullscreen) {
         document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) { // Safari
+      } else if (document.webkitExitFullscreen) {
+        // Safari
         document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) { // IE11
+      } else if (document.msExitFullscreen) {
+        // IE11
         document.msExitFullscreen();
       }
     }
   };
 
   const onFullscreenChange = () => {
-    const isFullscreenNow = 
-      !!document.fullscreenElement || 
-      !!document.webkitFullscreenElement || 
+    const isFullscreenNow =
+      !!document.fullscreenElement ||
+      !!document.webkitFullscreenElement ||
       !!document.msFullscreenElement;
     setIsFullscreen(isFullscreenNow);
     setControlsVisible(!isFullscreenNow);
@@ -253,10 +259,13 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
     document.addEventListener("fullscreenchange", onFullscreenChange);
     document.addEventListener("webkitfullscreenchange", onFullscreenChange);
     document.addEventListener("msfullscreenchange", onFullscreenChange);
-    
+
     return () => {
       document.removeEventListener("fullscreenchange", onFullscreenChange);
-      document.removeEventListener("webkitfullscreenchange", onFullscreenChange);
+      document.removeEventListener(
+        "webkitfullscreenchange",
+        onFullscreenChange
+      );
       document.removeEventListener("msfullscreenchange", onFullscreenChange);
     };
   }, []);
@@ -329,7 +338,7 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
   const goToExercise = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/lessons/history/${id}`,
+        `${API_URL}/api/lessons/history/${id}`,
         {
           status: "เสร็จสิ้น",
         },
@@ -406,8 +415,8 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
         onLoadedData={handleCanPlay}
         onLoadedMetadata={handleMetadataLoaded}
         className={`${
-          isFullscreen 
-            ? "h-full w-full" 
+          isFullscreen
+            ? "h-full w-full"
             : "w-full h-auto max-h-[85vh] aspect-video"
         }`}
         autoPlay
@@ -447,16 +456,21 @@ const VideoPlayer = ({ src, onPlay, onEnded }) => {
               <MdOutlineReplay10 size={isMobile ? 20 : 24} />
             </button>
             <button onClick={handleVideoClick} className="p-1">
-              {isPlaying ? 
-                <MdPause size={isMobile ? 20 : 24} /> : 
+              {isPlaying ? (
+                <MdPause size={isMobile ? 20 : 24} />
+              ) : (
                 <MdPlayArrow size={isMobile ? 20 : 24} />
-              }
+              )}
             </button>
             <button onClick={handleForward} className="p-1">
               <MdForward10 size={isMobile ? 20 : 24} />
             </button>
-            
-            <div className={`volume-control custom-volume-bar flex items-center gap-1 sm:gap-2 ${isMobile ? 'hidden sm:flex' : ''}`}>
+
+            <div
+              className={`volume-control custom-volume-bar flex items-center gap-1 sm:gap-2 ${
+                isMobile ? "hidden sm:flex" : ""
+              }`}
+            >
               <button onClick={toggleMute}>
                 {volume > 0 ? (
                   <MdVolumeUp size={isMobile ? 20 : 24} />

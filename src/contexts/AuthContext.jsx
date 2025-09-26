@@ -22,12 +22,9 @@ export const AuthProvider = ({ children }) => {
       const token = localStorage.getItem("token");
       if (token) {
         try {
-          const response = await axios.get(
-            `${API_URL}/auth/profile`,
-            {
-              headers: { Authorization: `Bearer ${token}` },
-            }
-          );
+          const response = await axios.get(`${API_URL}/auth/profile`, {
+            headers: { Authorization: `Bearer ${token}` },
+          });
           setUser(response.data.user);
         } catch (error) {
           console.error("Error fetching user:", error);
@@ -50,7 +47,7 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     localStorage.removeItem("token");
     setUser(null);
-    navigate("/login"); // Redirect to login page on logout
+    navigate("/login");
   };
 
   const contextValue = useMemo(
@@ -67,7 +64,6 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-// Custom hook for using auth context
 export const useAuth = () => {
   return useContext(AuthContext);
 };
