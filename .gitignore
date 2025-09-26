@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .vercel
+
+* text=auto eol=lf
+
+*.bat text eol=crlf
